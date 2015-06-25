@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AnticipateOvershootInterpolator;
 import android.view.animation.LinearInterpolator;
-import android.widget.ImageView;
 import java.util.ArrayList;
 
 /**
@@ -36,7 +35,6 @@ public class GooeyMenu extends View {
     private int mCenterY;
     private Paint mCirclePaint;
     private Paint mMenuPaint;
-    private ImageView mImageView;
     private CirclePoint mCirclePoint;
     private ArrayList<CirclePoint> mMenuPoints = new ArrayList<>();
     private ArrayList<ObjectAnimator> mShowAnimation = new ArrayList<>();
@@ -170,8 +168,6 @@ public class GooeyMenu extends View {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        mImageView = new ImageView(getContext());
-        mImageView.setImageResource(R.drawable.ic_launcher);
         mPlusBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.plus);
     }
 
