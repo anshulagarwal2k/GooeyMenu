@@ -2,4 +2,6 @@
 <resources>
 
     <color name="default_color">#02a6d8</color>
+    <color name="default_color_dark">#52a6b8</color>
+    <color name="color_red">#FF0000</color>
 </resources>

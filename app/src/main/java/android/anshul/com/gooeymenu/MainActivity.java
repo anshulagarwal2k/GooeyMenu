@@ -2,19 +2,22 @@ package android.anshul.com.gooeymenu;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements GooeyMenu.GooeyMenuInterface {
 
     private GooeyMenu mGooeyMenu;
+    private Toast mToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mGooeyMenu= (GooeyMenu)findViewById(R.id.gooey_menu);
+        mGooeyMenu = (GooeyMenu) findViewById(R.id.gooey_menu);
         mGooeyMenu.setOnMenuListener(this);
     }
 
@@ -42,16 +45,27 @@ public class MainActivity extends ActionBarActivity implements GooeyMenu.GooeyMe
 
     @Override
     public void menuOpen() {
+        showToast("Menu Open");
 
     }
 
     @Override
     public void menuClose() {
-
+        showToast( "Menu Close");
     }
 
     @Override
     public void menuItemClicked(int menuNumber) {
+        showToast( "Menu item clicked : " + menuNumber);
 
+    }
+
+   private void showToast(String msg){
+        if(mToast!=null){
+            mToast.cancel();
+        }
+       mToast= Toast.makeText(this,msg,Toast.LENGTH_SHORT);
+       mToast.setGravity(Gravity.CENTER,0,0);
+       mToast.show();
     }
 }
