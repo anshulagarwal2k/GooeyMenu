@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="min_height">160dp</dimen>
+    <dimen name="big_circle_radius">40dp</dimen>
+    <dimen name="small_circle_radius">20dp</dimen>
+
+    <dimen name="min_gap">80dp</dimen>
+</resources>
