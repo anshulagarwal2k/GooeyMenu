@@ -16,6 +16,6 @@
         app:fab_radius="@dimen/big_circle_radius"
         app:gap_between_menu_fab="@dimen/min_gap"
         app:menu_radius="@dimen/small_circle_radius"
-        app:no_of_menu="4" />
+        app:no_of_menu="5" />
 
 </RelativeLayout>
