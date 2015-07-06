@@ -6,5 +6,6 @@
         <attr name="fab_radius" format="dimension" />
         <attr name="menu_radius" format="dimension" />
         <attr name="gap_between_menu_fab" format="dimension" />
+        <attr name="menu_drawable" format="reference" />
     </declare-styleable>
 </resources>
