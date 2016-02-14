@@ -117,7 +117,7 @@ public class GooeyMenu extends View {
 
         }
 
-        mCirclePaint = new Paint();
+        mCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mCirclePaint.setColor(getResources().getColor(R.color.default_color));
         mCirclePaint.setStyle(Paint.Style.FILL_AND_STROKE);
 
